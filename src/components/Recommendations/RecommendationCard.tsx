@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Recommendation, Product } from '../../types';
 import { ProductCard } from '../Products/ProductCard';
-import { Check, X, Search, Clock, AlertCircle } from 'lucide-react';
+import { Check, X, Clock, AlertCircle } from 'lucide-react';
 import { apiService } from '../../services/api';
 import { ExtendedReplacement } from '../../types';
 
@@ -64,9 +64,18 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
     );
   };
 
-  const handleRejectAlternative = (product: Product) => {
-    onRejectAlternative(recommendation.id, product.id);
-    setSelectedAlternatives(prev => prev.filter(id => id !== product.id));
+  const handleRemoveAlternative = (productId: string) => {
+    // Remove from alternatives array
+    setProducts(prev => ({
+      ...prev,
+      alternatives: prev.alternatives.filter(alt => alt.id !== productId)
+    }));
+    
+    // Remove from selected alternatives
+    setSelectedAlternatives(prev => prev.filter(id => id !== productId));
+    
+    // Call the parent handler
+    onRejectAlternative(recommendation.id, productId);
   };
 
   const handleAlternativeAllocationChange = (productId: string, newPercentage: number) => {
@@ -90,6 +99,44 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
         alternatives: updatedAlternatives
       };
     });
+  };
+
+  const handleShowRecommendedMore = async () => {
+    const originalId = recommendation.originalProduct.id;
+    const rejectedId = products.alternatives[0]?.id;
+
+    try {
+      const newAlt = await apiService.getNewAlternative(originalId, rejectedId);
+
+      const newProduct: ExtendedReplacement & { id: string } = {
+        id: newAlt.replacement_id, // for UI component keys and tracking
+        replacement_id: newAlt.replacement_id,
+        original_product_id: recommendation.originalProduct.product_id,
+        name: newAlt.name,
+        brand: newAlt.brand,
+        category: newAlt.category,
+        stock_level: 0, // Default/fallback — adjust if available
+        reason_code: newAlt.reason_code || 'auto', // fallback
+        price: newAlt.price,
+        brand_popularity: newAlt.brand_popularity,
+
+        // Extended fields
+        allocationPercentage: 0,
+        diversificationScore: 0,
+        costSavings: 0,
+        qualityRating: newAlt.brand_popularity,
+        tariffImpact: 0
+      };
+
+      setProducts(prev => ({
+        ...prev,
+        alternatives: [...prev.alternatives, newProduct]
+      }));
+
+      setSelectedAlternatives(prev => [...prev, newProduct.id]);
+    } catch (error) {
+      console.error("Failed to fetch new alternative:", error);
+    }
   };
 
   const handleApprove = () => {
@@ -139,45 +186,6 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
     onReject(recommendation.id);
   };
 
-  const handleRequestMoreAlternative = async () => {
-    const originalId = recommendation.originalProduct.id;
-    const rejectedId = products.alternatives[0]?.id;
-
-    try {
-      const newAlt = await apiService.getNewAlternative(originalId, rejectedId);
-
-      const newProduct: ExtendedReplacement & { id: string } = {
-        id: newAlt.replacement_id, // for UI component keys and tracking
-        replacement_id: newAlt.replacement_id,
-        original_product_id: recommendation.originalProduct.product_id,
-        name: newAlt.name,
-        brand: newAlt.brand,
-        category: newAlt.category,
-        stock_level: 0, // Default/fallback — adjust if available
-        reason_code: newAlt.reason_code || 'auto', // fallback
-        price: newAlt.price,
-        brand_popularity: newAlt.brand_popularity,
-
-        // Extended fields
-        allocationPercentage: 0,
-        diversificationScore: 0,
-        costSavings: 0,
-        qualityRating: newAlt.brand_popularity,
-        tariffImpact: 0
-      };
-
-
-      setProducts(prev => ({
-        ...prev,
-        alternatives: [newProduct]
-      }));
-
-      setSelectedAlternatives([newProduct.id]);
-    } catch (error) {
-      console.error("Failed to fetch new alternative:", error);
-    }
-  };
-
   const getPriorityColor = (priority: string) => {
     switch (priority) {
       case 'high': return 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200';
@@ -192,7 +200,7 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
       case 'pending': return <Clock className="h-4 w-4 text-yellow-500" />;
       case 'approved': return <Check className="h-4 w-4 text-green-500" />;
       case 'rejected': return <X className="h-4 w-4 text-red-500" />;
-      case 'more-options-requested': return <Search className="h-4 w-4 text-blue-500" />;
+      case 'more-options-requested': return <AlertCircle className="h-4 w-4 text-blue-500" />;
       default: return <AlertCircle className="h-4 w-4 text-gray-500" />;
     }
   };
@@ -240,7 +248,7 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
             showComparison={showComparison}
             isOriginal={true}
             showAllocationInput={false} // Disabled for original - auto-synced
-           showBilling={true} // Show billing details for original product
+            showBilling={true} // Show billing details for original product
           />
         </div>
 
@@ -264,30 +272,22 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {products.alternatives.map((product) => (
-              <ProductCard
-                key={product.id}
-                product={product}
-                isSelected={selectedAlternatives.includes(product.id)}
-                onSelect={handleProductSelect}
-                onReject={handleRejectAlternative}
-                onAllocationChange={handleAlternativeAllocationChange}
-                showComparison={showComparison}
-                isOriginal={false}
-                showAllocationInput={true}
-               showBilling={showComparison} // Show billing when comparison is enabled
-              />
+              <div key={product.id} className="relative">
+                <ProductCard
+                  product={product}
+                  isSelected={selectedAlternatives.includes(product.id)}
+                  onSelect={handleProductSelect}
+                  onAllocationChange={handleAlternativeAllocationChange}
+                  showComparison={showComparison}
+                  isOriginal={false}
+                  showAllocationInput={true}
+                  showBilling={showComparison} // Show billing when comparison is enabled
+                  onShowRecommendedMore={handleShowRecommendedMore}
+                  onRemove={() => handleRemoveAlternative(product.id)}
+                />
+              </div>
             ))}
           </div>
-        </div>
-
-        <div className="mb-6">
-          <button
-            onClick={handleRequestMoreAlternative}
-            className="w-full px-4 py-3 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:border-blue-300 dark:hover:border-blue-700 transition-colors flex items-center justify-center space-x-2"
-          >
-            <Search className="h-4 w-4" />
-            <span>Recommend More Alternatives</span>
-          </button>
         </div>
 
         {recommendation.status === 'pending' && (

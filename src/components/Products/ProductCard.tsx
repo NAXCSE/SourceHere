@@ -1,6 +1,6 @@
 import React from 'react';
 import { Product } from '../../types';
-import { MapPin, Star, TrendingUp, DollarSign, Percent, X } from 'lucide-react';
+import { MapPin, Star, TrendingUp, DollarSign, Percent, X, Sparkles } from 'lucide-react';
 
 interface ProductCardProps {
   product: Product;
@@ -13,6 +13,8 @@ interface ProductCardProps {
   isOriginal?: boolean;
   showAllocationInput?: boolean;
   showBilling?: boolean;
+  onShowRecommendedMore?: () => void;
+  onRemove?: () => void;
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({
@@ -25,7 +27,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   showComparison = false,
   isOriginal = false,
   showAllocationInput = false,
-  showBilling = false
+  showBilling = false,
+  onShowRecommendedMore,
+  onRemove
 }) => {
   const handleClick = () => {
     if (onSelect && !isOriginal) {
@@ -40,10 +44,24 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     }
   };
 
+  const handleRemove = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (onRemove) {
+      onRemove();
+    }
+  };
+
   const handleAllocationChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newPercentage = parseInt(e.target.value) || 0;
     if (onAllocationChange) {
       onAllocationChange(product.id, newPercentage);
+    }
+  };
+
+  const handleShowRecommendedMore = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (onShowRecommendedMore) {
+      onShowRecommendedMore();
     }
   };
 
@@ -59,7 +77,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
   return (
     <div
-      className={`bg-white dark:bg-gray-800 rounded-lg border transition-all duration-200 ${
+      className={`bg-white dark:bg-gray-800 rounded-lg border transition-all duration-200 relative ${
         !isOriginal ? 'cursor-pointer' : ''
       } ${
         isSelected 
@@ -68,22 +86,24 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       } ${variant === 'primary' ? 'md:col-span-2 lg:col-span-1' : ''}`}
       onClick={handleClick}
     >
+      {/* Remove button for alternatives */}
+      {!isOriginal && onRemove && (
+        <button
+          onClick={handleRemove}
+          className="absolute top-2 right-2 p-1 text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 rounded-full transition-colors z-10"
+          title="Remove this alternative"
+        >
+          <X className="h-4 w-4" />
+        </button>
+      )}
+
       <div className="p-6">
         <div className="flex items-start space-x-4">
           <div className="flex-1 min-w-0">
             <div className="flex items-start justify-between mb-1">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 truncate">
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1 truncate pr-8">
                 {product.name}
               </h3>
-              {!isOriginal && onReject && (
-                <button
-                  onClick={handleReject}
-                  className="ml-2 p-1 text-red-400 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20 rounded transition-colors"
-                  title="Reject this alternative"
-                >
-                  <X className="h-4 w-4" />
-                </button>
-              )}
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
               {product.description}
@@ -150,19 +170,17 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                         {product.allocationPercentage}%
                       </span>
                     )}
-                    {!isOriginal && onSelect && (
+                    {!isOriginal && onShowRecommendedMore && (
                       <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          onSelect(product);
-                        }}
-                        className={`px-2 py-1 text-xs font-medium rounded transition-colors ${
+                        onClick={handleShowRecommendedMore}
+                        className={`px-3 py-1 text-xs font-medium rounded transition-colors flex items-center space-x-1 ${
                           isSelected
                             ? 'bg-blue-600 text-white'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400'
                         }`}
                       >
-                        {isSelected ? 'Selected' : 'Select'}
+                        <Sparkles className="h-3 w-3" />
+                        <span>Show Recommended More</span>
                       </button>
                     )}
                   </div>
@@ -240,10 +258,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                       <div className="flex justify-between">
                         <span className="text-gray-500 dark:text-gray-400">Tariff Rate:</span>
                         <span className="text-red-600">{(product.tariff_rate || 0).toFixed(1)}%</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-gray-500 dark:text-gray-400">Category Adjustment:</span>
-                        <span className="text-orange-600">{((product.delta_cat || 0.05) * 100).toFixed(1)}%</span>
                       </div>
                       <div className="flex justify-between border-t pt-1">
                         <span className="text-gray-700 dark:text-gray-300 font-medium">Predicted Final:</span>
