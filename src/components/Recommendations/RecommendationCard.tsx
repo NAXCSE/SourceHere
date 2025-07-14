@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Recommendation, Product } from '../../types';
 import { ProductCard } from '../Products/ProductCard';
 import { Check, X, Clock, AlertCircle } from 'lucide-react';
+import { apiService } from '../../services/api';
 import { ExtendedReplacement } from '../../types';
 
 interface RecommendationCardProps {
@@ -102,16 +103,10 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
 
   const handleShowRecommendedMore = async () => {
     const originalId = recommendation.originalProduct.id;
-    const rejectedId = products.alternatives[0]?.id; // Use the first alternative as rejected
+    const rejectedId = products.alternatives[0]?.id;
 
     try {
-      const response = await fetch(`http://127.0.0.1:8000/recommend?original_id=${originalId}&rejected_id=${rejectedId}`);
-      
-      if (!response.ok) {
-        throw new Error('Failed to fetch new recommendation');
-      }
-      
-      const newAlt = await response.json();
+      const newAlt = await apiService.getNewAlternative(originalId, rejectedId);
 
       const newProduct: ExtendedReplacement & { id: string } = {
         id: newAlt.replacement_id, // for UI component keys and tracking
@@ -120,16 +115,16 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
         name: newAlt.name,
         brand: newAlt.brand,
         category: newAlt.category,
-        stock_level: Math.floor(Math.random() * 5000) + 1000, // Generate realistic stock level
-        reason_code: newAlt.reason_code || 'quality',
+        stock_level: 0, // Default/fallback — adjust if available
+        reason_code: newAlt.reason_code || 'auto', // fallback
         price: newAlt.price,
-        brand_popularity: newAlt.brand_popularity || 4.0,
+        brand_popularity: newAlt.brand_popularity,
 
         // Extended fields
         allocationPercentage: 0,
-        diversificationScore: Math.floor(Math.random() * 40) + 60, // 60-100%
-        costSavings: Math.max(0, (products.original.price || products.original.base_price) - newAlt.price),
-        qualityRating: (newAlt.brand_popularity || 4.0) / 2, // Convert to 5-star scale if needed
+        diversificationScore: 0,
+        costSavings: 0,
+        qualityRating: newAlt.brand_popularity,
         tariffImpact: 0
       };
 
@@ -141,7 +136,6 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
       setSelectedAlternatives(prev => [...prev, newProduct.id]);
     } catch (error) {
       console.error("Failed to fetch new alternative:", error);
-      // Optionally show user-friendly error message
     }
   };
 
