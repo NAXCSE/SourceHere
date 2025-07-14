@@ -1,0 +1,101 @@
+product_id,category,sub_category,brand,name,base_price,supplier_country,hs_code,is_tariffed,stock_level,rating,tariff_start_date,tariff_end_date,tariff_rate,delta_cat,pred_price_after
+PRD0001,Babycare,Toys,Honest Company,Honest Company Premium Toys,69.21,PK,961900,0.29,1099,4.6,01-01-2025,31-12-2026,29,0.12,89.2809
+PRD0002,Babycare,Toys,Seventh Generation,Seventh Generation Toys,96.58,CN,961900,0.34,4934,4.2,01-01-2025,31-12-2026,34,0.12,129.4172
+PRD0003,Babycare,Lotions,Honest Company,Honest Company Premium Lotions,119.98,VN,961900,0.46,1980,2.1,01-01-2025,31-12-2026,46,0.12,175.1708
+PRD0004,Babycare,Care kits,Earth's Best,Earth's Best Premium Care kits,122.27,CN,961900,0.34,2984,3.6,01-01-2025,31-12-2026,34,0.12,163.8418
+PRD0005,Babycare,Lotions,Gerber,Gerber Lotions,118.31,BD,961900,0.37,646,4.8,01-01-2025,31-12-2026,37,0.12,162.0847
+PRD0006,Babycare,Lotions,Honest Company,Honest Company Lotions,31.42,BD,961900,0.37,3003,4.7,01-01-2025,31-12-2026,37,0.12,43.0454
+PRD0007,Babycare,Care kits,Enfamil,Enfamil Premium Care kits,89.25,VN,961900,0.46,616,4.2,01-01-2025,31-12-2026,46,0.12,130.305
+PRD0008,Babycare,Baby formula,Seventh Generation,Seventh Generation Baby formula,30.37,BD,961900,0.37,4311,3.8,01-01-2025,31-12-2026,37,0.12,41.6069
+PRD0009,Babycare,Baby food,Earth's Best,Earth's Best Premium Baby food,71.53,MY,961900,0.24,3978,4.5,01-01-2025,31-12-2026,24,0.12,88.6972
+PRD0010,Babycare,Clothing,Earth's Best,Earth's Best Clothing,118.42,ID,961900,0.32,772,4.0,01-01-2025,31-12-2026,32,0.12,156.3144
+PRD0011,Bedding and Linens,Bedroom storage solutions,Room Essentials,Room Essentials Bedroom storage solutions,82.26,CN,630231,0.34,1835,4.8,01-01-2025,31-12-2026,34,0.18,110.2284
+PRD0012,Bedding and Linens,Bed skirts,Great Bay Home,Great Bay Home Professional Bed skirts,83.6,CN,630231,0.34,3980,4.8,01-01-2025,31-12-2026,34,0.18,112.024
+PRD0013,Bedding and Linens,Comforters,Mainstays,Mainstays Comforters,73.65,TH,630231,0.36,1464,4.6,01-01-2025,31-12-2026,36,0.18,100.164
+PRD0014,Bedding and Linens,Mattress toppers,Nestl Bedding,Nestl Bedding Professional Mattress toppers,75.82,MX,630231,0.25,420,4.7,01-01-2025,31-12-2026,25,0.18,94.775
+PRD0015,Bedding and Linens,Comforters,HC Collection,HC Collection Premium Comforters,18.24,MX,630231,0.25,4245,4.9,01-01-2025,31-12-2026,25,0.18,22.8
+PRD0016,Bedding and Linens,Bed skirts,Utopia Bedding,Utopia Bedding Premium Bed skirts,24.32,KR,630231,0.25,2849,4.3,01-01-2025,31-12-2026,25,0.18,30.4
+PRD0017,Bedding and Linens,Bedsheets,Nestl Bedding,Nestl Bedding Premium Bedsheets,29.03,MY,630231,0.24,1316,4.3,01-01-2025,31-12-2026,24,0.18,35.9972
+PRD0018,Bedding and Linens,Comforters,Bare Home,Bare Home Professional Comforters,24.2,TH,630231,0.36,4097,4.0,01-01-2025,31-12-2026,36,0.18,32.912
+PRD0019,Bedding and Linens,Comforters,Bare Home,Bare Home Premium Comforters,67.21,CN,630231,0.34,624,3.8,01-01-2025,31-12-2026,34,0.18,90.0614
+PRD0020,Bedding and Linens,Bedroom storage solutions,Madison Park,Madison Park Bedroom storage solutions,83.75,TH,630231,0.36,1925,4.3,01-01-2025,31-12-2026,36,0.18,113.9
+PRD0021,Cleaning Supplies,Laundry detergent,Mr. Clean,Mr. Clean Laundry detergent,17.97,MY,340220,0.24,3681,3.8,01-01-2025,31-12-2026,24,0.22,22.2828
+PRD0022,Cleaning Supplies,Dishwashing soap,Windex,Windex Dishwashing soap,34.92,CN,340220,0.34,4437,3.8,01-01-2025,31-12-2026,34,0.22,46.7928
+PRD0023,Cleaning Supplies,Paper towels,Scrubbing Bubbles,Scrubbing Bubbles Antibacterial Paper towels,35.6,BD,340220,0.37,3092,4.0,01-01-2025,31-12-2026,37,0.22,48.772
+PRD0024,Cleaning Supplies,Disinfecting wipes,Lysol,Lysol Disinfecting wipes,23.58,TH,340220,0.36,1489,4.2,01-01-2025,31-12-2026,36,0.22,32.0688
+PRD0025,Cleaning Supplies,Laundry detergent,Clorox,Clorox Multi-Surface Laundry detergent,12.93,VN,340220,0.46,1820,4.5,01-01-2025,31-12-2026,46,0.22,18.8778
+PRD0026,Cleaning Supplies,Disinfecting wipes,Pine-Sol,Pine-Sol Antibacterial Disinfecting wipes,21.67,MY,340220,0.24,3065,3.7,01-01-2025,31-12-2026,24,0.22,26.8708
+PRD0027,Cleaning Supplies,Disinfecting wipes,Scrubbing Bubbles,Scrubbing Bubbles Antibacterial Disinfecting wipes,29.26,MY,340220,0.24,346,4.0,01-01-2025,31-12-2026,24,0.22,36.2824
+PRD0028,Cleaning Supplies,Dishwashing soap,Tide,Tide Antibacterial Dishwashing soap,33.71,BD,340220,0.37,3240,3.9,01-01-2025,31-12-2026,37,0.22,46.1827
+PRD0029,Cleaning Supplies,Dishwashing soap,Clorox,Clorox Antibacterial Dishwashing soap,12.56,BD,340220,0.37,2245,4.1,01-01-2025,31-12-2026,37,0.22,17.2072
+PRD0030,Cleaning Supplies,Paper towels,Tide,Tide Paper towels,6.85,ID,340220,0.32,4378,4.7,01-01-2025,31-12-2026,32,0.22,9.042
+PRD0031,Fitness Accessories,Foam rollers,Athletic Works,Athletic Works Premium Foam rollers,34.62,BD,950691,0.37,4436,3.8,01-01-2025,31-12-2026,37,0.25,47.4294
+PRD0032,Fitness Accessories,Resistance bands,CAP Barbell,CAP Barbell Resistance bands,36.48,ID,950691,0.32,1525,4.3,01-01-2025,31-12-2026,32,0.25,48.1536
+PRD0033,Fitness Accessories,Dumbbells,TRX,TRX Dumbbells,18.44,ID,950691,0.32,4096,4.3,01-01-2025,31-12-2026,32,0.25,24.3408
+PRD0034,Fitness Accessories,Resistance bands,CAP Barbell,CAP Barbell Professional Resistance bands,25.53,TH,950691,0.36,883,4.3,01-01-2025,31-12-2026,36,0.25,34.7208
+PRD0035,Fitness Accessories,Foam rollers,Everlast,Everlast Foam rollers,62.87,VN,950691,0.46,3615,4.2,01-01-2025,31-12-2026,46,0.25,91.7902
+PRD0036,Fitness Accessories,Exercise balls,Manduka,Manduka Exercise balls,13.8,IN,950691,0.26,1762,4.7,01-01-2025,31-12-2026,26,0.25,17.388
+PRD0037,Fitness Accessories,Exercise balls,TRX,TRX Professional Exercise balls,12.15,ID,950691,0.32,3860,4.6,01-01-2025,31-12-2026,32,0.25,16.038
+PRD0038,Fitness Accessories,Foam rollers,Athletic Works,Athletic Works Premium Foam rollers,22.72,KR,950691,0.25,1448,4.1,01-01-2025,31-12-2026,25,0.25,28.4
+PRD0039,Fitness Accessories,Exercise balls,TRX,TRX Professional Exercise balls,29.55,BD,950691,0.37,3490,4.9,01-01-2025,31-12-2026,37,0.25,40.4835
+PRD0040,Fitness Accessories,Foam rollers,Gaiam,Gaiam Premium Foam rollers,7.88,CN,950691,0.34,1278,4.6,01-01-2025,31-12-2026,34,0.25,10.5592
+PRD0041,Health Care,Medicine,Tylenol,Tylenol Professional Medicine,54.68,IN,300490,0.26,828,4.3,01-01-2025,31-12-2026,26,0.3,68.8968
+PRD0042,Health Care,Supplements,Benadryl,Benadryl Premium Supplements,30.9,MY,300490,0.24,1353,4.3,01-01-2025,31-12-2026,24,0.3,38.316
+PRD0043,Health Care,Foot spas,Tums,Tums Foot spas,63.07,TW,300490,0.32,1717,4.7,01-01-2025,31-12-2026,32,0.3,83.2524
+PRD0044,Health Care,Masks,Centrum,Centrum Professional Masks,37.55,KR,300490,0.25,4977,4.6,01-01-2025,31-12-2026,25,0.3,46.9375
+PRD0045,Health Care,Masks,Benadryl,Benadryl Professional Masks,49.24,VN,300490,0.46,201,4.1,01-01-2025,31-12-2026,46,0.3,71.8904
+PRD0046,Health Care,Handheld massagers,Benadryl,Benadryl Professional Handheld massagers,39.9,BD,300490,0.37,1964,3.9,01-01-2025,31-12-2026,37,0.3,54.663
+PRD0047,Health Care,Medicine,Robitussin,Robitussin Medicine,30.45,KR,300490,0.25,3078,4.7,01-01-2025,31-12-2026,25,0.3,38.0625
+PRD0048,Health Care,Handheld massagers,Pepto-Bismol,Pepto-Bismol Professional Handheld massagers,22.83,IN,300490,0.26,2408,4.3,01-01-2025,31-12-2026,26,0.3,28.7658
+PRD0049,Health Care,Masks,Equate,Equate Premium Masks,54.95,TH,300490,0.36,3951,4.4,01-01-2025,31-12-2026,36,0.3,74.732
+PRD0050,Health Care,Foot spas,Tylenol,Tylenol Premium Foot spas,62.24,KR,300490,0.25,3897,5.0,01-01-2025,31-12-2026,25,0.3,77.8
+PRD0051,Kitchenware,Canisters,Instant Pot,Instant Pot Premium Canisters,252.28,TH,732393,0.36,1439,4.7,01-01-2025,31-12-2026,36,0.18,343.1008
+PRD0052,Kitchenware,Knife sets,Pioneer Woman,Pioneer Woman Premium Knife sets,257.57,VN,732393,0.46,4278,4.4,01-01-2025,31-12-2026,46,0.18,376.0522
+PRD0053,Kitchenware,Mixing bowls,Rubbermaid,Rubbermaid Premium Mixing bowls,66.16,IN,732393,0.26,3449,3.8,01-01-2025,31-12-2026,26,0.18,83.3616
+PRD0054,Kitchenware,Food storage containers,Ninja,Ninja Food storage containers,148.71,CN,732393,0.34,4869,4.6,01-01-2025,31-12-2026,34,0.18,199.2714
+PRD0055,Kitchenware,Food storage containers,Cuisinart,Cuisinart Premium Food storage containers,120.31,MY,732393,0.24,4967,4.6,01-01-2025,31-12-2026,24,0.18,149.1844
+PRD0056,Kitchenware,Cookware sets,Pioneer Woman,Pioneer Woman Cookware sets,37.29,TH,732393,0.36,338,4.5,01-01-2025,31-12-2026,36,0.18,50.7144
+PRD0057,Kitchenware,Kitchen gadgets and utensils,Instant Pot,Instant Pot Premium Kitchen gadgets and utensils,78.7,TH,732393,0.36,4517,4.4,01-01-2025,31-12-2026,36,0.18,107.032
+PRD0058,Kitchenware,Mixing bowls,KitchenAid,KitchenAid Mixing bowls,231.06,MX,732393,0.25,896,4.3,01-01-2025,31-12-2026,25,0.18,288.825
+PRD0059,Kitchenware,Canisters,Ninja,Ninja Canisters,188.31,TW,732393,0.32,4329,4.0,01-01-2025,31-12-2026,32,0.18,248.5692
+PRD0060,Kitchenware,Cookware sets,KitchenAid,KitchenAid Premium Cookware sets,248.27,VN,732393,0.46,3801,4.5,01-01-2025,31-12-2026,46,0.18,362.4742
+PRD0061,Laundry Supplies,Fabric softener,Cheer,Cheer Professional Fabric softener,25.38,TH,340220,0.36,3342,3.7,01-01-2025,31-12-2026,36,0.2,34.5168
+PRD0062,Laundry Supplies,Fabric softener,Snuggle,Snuggle Professional Fabric softener,18.27,PK,340220,0.29,1185,3.6,01-01-2025,31-12-2026,29,0.2,23.5683
+PRD0063,Laundry Supplies,Fabric softener,Gain,Gain Premium Fabric softener,25.13,PK,340220,0.29,2645,4.7,01-01-2025,31-12-2026,29,0.2,32.4177
+PRD0064,Laundry Supplies,Fabric softener,All,All Professional Fabric softener,23.76,MX,340220,0.25,1580,4.5,01-01-2025,31-12-2026,25,0.2,29.7
+PRD0065,Laundry Supplies,Stain removers,Tide,Tide Stain removers,14.04,KR,340220,0.25,2935,4.0,01-01-2025,31-12-2026,25,0.2,17.55
+PRD0066,Laundry Supplies,Fabric softener,Tide,Tide Fabric softener,23.86,ID,340220,0.32,629,4.4,01-01-2025,31-12-2026,32,0.2,31.4952
+PRD0067,Laundry Supplies,Stain removers,Persil,Persil Premium Stain removers,7.67,VN,340220,0.46,1477,4.2,01-01-2025,31-12-2026,46,0.2,11.1982
+PRD0068,Laundry Supplies,Laundry detergent,Tide,Tide Professional Laundry detergent,16.99,TW,340220,0.32,2368,4.1,01-01-2025,31-12-2026,32,0.2,22.4268
+PRD0069,Laundry Supplies,Laundry baskets and hampers,Snuggle,Snuggle Laundry baskets and hampers,12.68,VN,340220,0.46,3902,4.7,01-01-2025,31-12-2026,46,0.2,18.5128
+PRD0070,Laundry Supplies,Dryer sheets,Downy,Downy Dryer sheets,26.62,PK,340220,0.29,2612,4.8,01-01-2025,31-12-2026,29,0.2,34.3398
+PRD0071,Personal Care,Soap,Dove,Dove Soap,26.04,TH,330749,0.36,2766,3.9,01-01-2025,31-12-2026,36,0.25,35.4144
+PRD0072,Personal Care,Hair treatments,L'Oreal,L'Oreal Advanced Hair treatments,18.79,KR,330749,0.25,2796,4.3,01-01-2025,31-12-2026,25,0.25,23.4875
+PRD0073,Personal Care,Razors,Gillette,Gillette Razors,21.65,KR,330749,0.25,2814,4.4,01-01-2025,31-12-2026,25,0.25,27.0625
+PRD0074,Personal Care,Shaving products,Oral-B,Oral-B Daily Shaving products,28.71,IN,330749,0.26,2379,4.7,01-01-2025,31-12-2026,26,0.25,36.1746
+PRD0075,Personal Care,Razors,Oral-B,Oral-B Razors,24.89,MX,330749,0.25,3001,4.1,01-01-2025,31-12-2026,25,0.25,31.1125
+PRD0076,Personal Care,Feminine hygiene products,Pantene,Pantene Advanced Feminine hygiene products,14.93,VN,330749,0.46,236,4.1,01-01-2025,31-12-2026,46,0.25,21.7978
+PRD0077,Personal Care,Feminine hygiene products,Crest,Crest Daily Feminine hygiene products,21.75,PK,330749,0.29,4682,3.3,01-01-2025,31-12-2026,29,0.25,28.0575
+PRD0078,Personal Care,Hair treatments,Gillette,Gillette Hair treatments,2.14,BD,330749,0.37,2460,4.5,01-01-2025,31-12-2026,37,0.25,2.9318
+PRD0079,Personal Care,Shaving products,Dove,Dove Daily Shaving products,10.19,KR,330749,0.25,2186,4.0,01-01-2025,31-12-2026,25,0.25,12.7375
+PRD0080,Personal Care,Toothpaste,Gillette,Gillette Toothpaste,30.08,MY,330749,0.24,2053,3.9,01-01-2025,31-12-2026,24,0.25,37.2992
+PRD0081,Pet Supplies,Pet beds,Greenies,Greenies Professional Pet beds,15.34,MX,230910,0.25,3969,4.9,01-01-2025,31-12-2026,25,0.15,19.175
+PRD0082,Pet Supplies,Pet toys,Friskies,Friskies Premium Pet toys,24.73,CN,230910,0.34,107,4.0,01-01-2025,31-12-2026,34,0.15,33.1382
+PRD0083,Pet Supplies,Pet accessories,Fancy Feast,Fancy Feast Pet accessories,23.68,KR,230910,0.25,4641,4.6,01-01-2025,31-12-2026,25,0.15,29.6
+PRD0084,Pet Supplies,Cat food and treats,Iams,Iams Cat food and treats,32.12,TW,230910,0.32,4788,4.4,01-01-2025,31-12-2026,32,0.15,42.3984
+PRD0085,Pet Supplies,Litter boxes,Royal Canin,Royal Canin Premium Litter boxes,19.03,PK,230910,0.29,2382,4.6,01-01-2025,31-12-2026,29,0.15,24.5487
+PRD0086,Pet Supplies,Cat food and treats,Purina,Purina Premium Cat food and treats,17.89,IN,230910,0.26,4691,3.7,01-01-2025,31-12-2026,26,0.15,22.5414
+PRD0087,Pet Supplies,Litter boxes,Hill's,Hill's Premium Litter boxes,33.32,VN,230910,0.46,4122,4.0,01-01-2025,31-12-2026,46,0.15,48.6472
+PRD0088,Pet Supplies,Pet accessories,Blue Buffalo,Blue Buffalo Pet accessories,27.96,IN,230910,0.26,2458,4.5,01-01-2025,31-12-2026,26,0.15,35.2296
+PRD0089,Pet Supplies,Pet beds,Iams,Iams Pet beds,22.73,CN,230910,0.34,365,3.7,01-01-2025,31-12-2026,34,0.15,30.4582
+PRD0090,Pet Supplies,Dog food and treats,Purina,Purina Premium Dog food and treats,32.19,MY,230910,0.24,4528,4.5,01-01-2025,31-12-2026,24,0.15,39.9156
+PRD0091,Women's Clothing,Bikinis,Time and Tru,Time and Tru Bikinis - XXL,32.49,MX,620462,0.25,1032,4.5,01-01-2025,31-12-2026,25,0.3,40.6125
+PRD0092,Women's Clothing,Dresses,George,George Dresses - Pink,15.21,KR,620462,0.25,1488,4.6,01-01-2025,31-12-2026,25,0.3,19.0125
+PRD0093,Women's Clothing,Bikinis,Free Assembly,Free Assembly Bikinis - Blue,27.3,PK,620462,0.29,4232,4.0,01-01-2025,31-12-2026,29,0.3,35.217
+PRD0094,Women's Clothing,Sportswear,Wonder Nation,Wonder Nation Sportswear - M,16.99,MY,620462,0.24,596,4.7,01-01-2025,31-12-2026,24,0.3,21.0676
+PRD0095,Women's Clothing,Sportswear,Time and Tru,Time and Tru Sportswear - L,39.84,TH,620462,0.36,538,4.5,01-01-2025,31-12-2026,36,0.3,54.1824
+PRD0096,Women's Clothing,Plus-sized attire,George,George Plus-sized attire - XL,20.59,MX,620462,0.25,1077,4.2,01-01-2025,31-12-2026,25,0.3,25.7375
+PRD0097,Women's Clothing,Bikinis,Free Assembly,Free Assembly Bikinis - Pink,23.92,CN,620462,0.34,4403,4.2,01-01-2025,31-12-2026,34,0.3,32.0528
+PRD0098,Women's Clothing,Plus-sized attire,Scoop,Scoop Plus-sized attire - Black,18.4,MY,620462,0.24,1575,3.9,01-01-2025,31-12-2026,24,0.3,22.816
+PRD0099,Women's Clothing,Bikinis,Scoop,Scoop Bikinis - Pink,25.82,BD,620462,0.37,4907,4.5,01-01-2025,31-12-2026,37,0.3,35.3734
+PRD0100,Women's Clothing,Plus-sized attire,Scoop,Scoop Plus-sized attire - Navy,36.84,ID,620462,0.32,4867,4.3,01-01-2025,31-12-2026,32,0.3,48.6288

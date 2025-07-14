@@ -1,0 +1,401 @@
+original_product_id,replacement_id,name,brand,category,stock_level,reason_code,price,brand_popularity
+PRD0001,RPL0001,Honest Select Toys,Honest Select,Babycare,3108,competitive_price,91.53,2.92
+PRD0001,RPL0002,Honest Nature Toys,Honest Nature,Babycare,2916,better_quality,95.95,4.91
+PRD0001,RPL0003,Honest Heritage Toys,Honest Heritage,Babycare,2319,tariff_free,82.29,3.06
+PRD0001,RPL0004,Honest American Toys,Honest American,Babycare,3993,tariff_free,87.48,4.43
+PRD0002,RPL0011,Seventh Organics Toys,Seventh Organics,Babycare,4154,better_quality,139.72,2.76
+PRD0002,RPL0012,Seventh Heritage Toys,Seventh Heritage,Babycare,1360,similar_features,121.47,3.37
+PRD0002,RPL0013,Seventh American Toys,Seventh American,Babycare,4468,better_quality,135.3,3.71
+PRD0002,RPL0014,Seventh Heritage Toys,Seventh Heritage,Babycare,5907,competitive_price,128.14,3.63
+PRD0003,RPL0021,Honest Essentials Lotions,Honest Essentials,Babycare,1142,similar_features,162.41,2.56
+PRD0003,RPL0022,Honest Heritage Lotions,Honest Heritage,Babycare,1546,tariff_free,180.14,4.82
+PRD0003,RPL0023,Honest Craft Lotions,Honest Craft,Babycare,1511,better_quality,166.05,3.33
+PRD0003,RPL0024,Honest American Lotions,Honest American,Babycare,3518,tariff_free,167.66,4.07
+PRD0004,RPL0031,Earth's Nature Care kits,Earth's Nature,Babycare,5230,better_quality,161.1,4.71
+PRD0004,RPL0032,Earth's Nature Care kits,Earth's Nature,Babycare,5973,similar_features,160.93,3.04
+PRD0004,RPL0033,Earth's Heritage Care kits,Earth's Heritage,Babycare,4598,similar_features,165.87,2.97
+PRD0004,RPL0034,Earth's Select Care kits,Earth's Select,Babycare,2349,better_quality,162.73,4.18
+PRD0005,RPL0041,Gerber Craft Lotions,Gerber Craft,Babycare,2767,better_quality,174.17,3.99
+PRD0005,RPL0042,Gerber Heritage Lotions,Gerber Heritage,Babycare,3950,similar_features,158.14,4.04
+PRD0005,RPL0043,Gerber Heritage Lotions,Gerber Heritage,Babycare,2765,similar_features,166.55,2.79
+PRD0005,RPL0044,Gerber Heritage Lotions,Gerber Heritage,Babycare,5880,better_quality,153.86,2.85
+PRD0006,RPL0051,Honest Nature Lotions,Honest Nature,Babycare,4908,tariff_free,43.71,3.46
+PRD0006,RPL0052,Honest American Lotions,Honest American,Babycare,5880,tariff_free,43.98,4.8
+PRD0006,RPL0053,Honest Craft Lotions,Honest Craft,Babycare,2566,similar_features,40.75,2.85
+PRD0006,RPL0054,Honest American Lotions,Honest American,Babycare,3141,better_quality,43.87,4.88
+PRD0007,RPL0061,Enfamil Pure Care kits,Enfamil Pure,Babycare,3345,better_quality,123.95,4.91
+PRD0007,RPL0062,Enfamil Nature Care kits,Enfamil Nature,Babycare,3604,better_quality,134.16,4.28
+PRD0007,RPL0063,Enfamil American Care kits,Enfamil American,Babycare,4831,tariff_free,123.37,2.58
+PRD0007,RPL0064,Enfamil Essentials Care kits,Enfamil Essentials,Babycare,2041,tariff_free,120.56,3.84
+PRD0008,RPL0071,Seventh American Baby formula,Seventh American,Babycare,4257,competitive_price,42.04,3.87
+PRD0008,RPL0072,Seventh Heritage Baby formula,Seventh Heritage,Babycare,4649,similar_features,40.06,4.56
+PRD0008,RPL0073,Seventh Craft Baby formula,Seventh Craft,Babycare,540,better_quality,43.75,4.4
+PRD0008,RPL0074,Seventh Craft Baby formula,Seventh Craft,Babycare,3682,tariff_free,39.73,2.76
+PRD0009,RPL0081,Earth's Essentials Baby food,Earth's Essentials,Babycare,464,similar_features,94.02,3.62
+PRD0009,RPL0082,Earth's Heritage Baby food,Earth's Heritage,Babycare,1161,tariff_free,87.83,4.44
+PRD0009,RPL0083,Earth's Select Baby food,Earth's Select,Babycare,5016,better_quality,93.11,4.22
+PRD0009,RPL0084,Earth's Pure Baby food,Earth's Pure,Babycare,1892,competitive_price,90.35,4.53
+PRD0010,RPL0091,Earth's Organics Clothing,Earth's Organics,Babycare,5089,similar_features,157.12,3.85
+PRD0010,RPL0092,Earth's Essentials Clothing,Earth's Essentials,Babycare,2390,competitive_price,151.05,4.88
+PRD0010,RPL0093,Earth's Pure Clothing,Earth's Pure,Babycare,3571,similar_features,167.89,4.8
+PRD0010,RPL0094,Earth's Pure Clothing,Earth's Pure,Babycare,1287,similar_features,161.35,3.12
+PRD0011,RPL0101,Room Select Bedroom storage solutions,Room Select,Bedding and Linens,5739,tariff_free,114.84,3.48
+PRD0011,RPL0102,Room Essentials Bedroom storage solutions,Room Essentials,Bedding and Linens,3273,competitive_price,112.48,3.63
+PRD0011,RPL0103,Room Nature Bedroom storage solutions,Room Nature,Bedding and Linens,2479,similar_features,110.5,4.24
+PRD0011,RPL0104,Room American Bedroom storage solutions,Room American,Bedding and Linens,2881,competitive_price,118.17,3.95
+PRD0012,RPL0111,Great American Bed skirts,Great American,Bedding and Linens,5912,competitive_price,114.44,3.4
+PRD0012,RPL0112,Great Craft Bed skirts,Great Craft,Bedding and Linens,3719,better_quality,110.19,4.56
+PRD0012,RPL0113,Great Essentials Bed skirts,Great Essentials,Bedding and Linens,2523,tariff_free,108.85,3.34
+PRD0012,RPL0114,Great American Bed skirts,Great American,Bedding and Linens,5791,competitive_price,117.19,4.41
+PRD0013,RPL0121,Mainstays Heritage Comforters,Mainstays Heritage,Bedding and Linens,3964,tariff_free,102.19,2.54
+PRD0013,RPL0122,Mainstays American Comforters,Mainstays American,Bedding and Linens,3704,tariff_free,99.47,3.01
+PRD0013,RPL0123,Mainstays Essentials Comforters,Mainstays Essentials,Bedding and Linens,2444,similar_features,94.7,2.73
+PRD0013,RPL0124,Mainstays Essentials Comforters,Mainstays Essentials,Bedding and Linens,5643,tariff_free,93.47,4.76
+PRD0014,RPL0131,Nestl USA Mattress toppers,Nestl USA,Bedding and Linens,2702,tariff_free,93.2,4.31
+PRD0014,RPL0132,Nestl Nature Mattress toppers,Nestl Nature,Bedding and Linens,5964,tariff_free,97.13,2.74
+PRD0014,RPL0133,Nestl American Mattress toppers,Nestl American,Bedding and Linens,5063,better_quality,88.37,3.07
+PRD0014,RPL0134,Nestl USA Mattress toppers,Nestl USA,Bedding and Linens,3014,better_quality,87.32,4.54
+PRD0015,RPL0141,HC Pure Comforters,HC Pure,Bedding and Linens,2075,competitive_price,22.72,3.46
+PRD0015,RPL0142,HC Heritage Comforters,HC Heritage,Bedding and Linens,2651,tariff_free,22.12,2.84
+PRD0015,RPL0143,HC Pure Comforters,HC Pure,Bedding and Linens,4814,tariff_free,21.23,2.52
+PRD0015,RPL0144,HC American Comforters,HC American,Bedding and Linens,1945,tariff_free,22.26,4.07
+PRD0016,RPL0151,Utopia Nature Bed skirts,Utopia Nature,Bedding and Linens,3824,competitive_price,30.96,4.65
+PRD0016,RPL0152,Utopia Heritage Bed skirts,Utopia Heritage,Bedding and Linens,1208,better_quality,28.65,3.97
+PRD0016,RPL0153,Utopia Organics Bed skirts,Utopia Organics,Bedding and Linens,2776,tariff_free,32.65,4.48
+PRD0016,RPL0154,Utopia Essentials Bed skirts,Utopia Essentials,Bedding and Linens,2232,similar_features,31.1,3.88
+PRD0017,RPL0161,Nestl USA Bedsheets,Nestl USA,Bedding and Linens,5593,tariff_free,38,4.69
+PRD0017,RPL0162,Nestl Craft Bedsheets,Nestl Craft,Bedding and Linens,1745,similar_features,36.61,4.37
+PRD0017,RPL0163,Nestl USA Bedsheets,Nestl USA,Bedding and Linens,2160,competitive_price,37.63,3.74
+PRD0017,RPL0164,Nestl Select Bedsheets,Nestl Select,Bedding and Linens,5065,competitive_price,35.99,2.68
+PRD0018,RPL0171,Bare Organics Comforters,Bare Organics,Bedding and Linens,1281,better_quality,35.2,3.47
+PRD0018,RPL0172,Bare Organics Comforters,Bare Organics,Bedding and Linens,1615,competitive_price,33.16,4.41
+PRD0018,RPL0173,Bare USA Comforters,Bare USA,Bedding and Linens,312,competitive_price,33.37,3.16
+PRD0018,RPL0174,Bare USA Comforters,Bare USA,Bedding and Linens,3460,better_quality,35.27,3.77
+PRD0019,RPL0181,Bare Nature Comforters,Bare Nature,Bedding and Linens,875,tariff_free,92.97,4.1
+PRD0019,RPL0182,Bare Essentials Comforters,Bare Essentials,Bedding and Linens,847,tariff_free,84.06,3.78
+PRD0019,RPL0183,Bare Pure Comforters,Bare Pure,Bedding and Linens,3400,competitive_price,90.59,3.97
+PRD0019,RPL0184,Bare Essentials Comforters,Bare Essentials,Bedding and Linens,2154,competitive_price,92.92,2.64
+PRD0020,RPL0191,Madison Nature Bedroom storage solutions,Madison Nature,Bedding and Linens,5215,similar_features,106.9,4.02
+PRD0020,RPL0192,Madison Pure Bedroom storage solutions,Madison Pure,Bedding and Linens,5999,competitive_price,106.96,2.84
+PRD0020,RPL0193,Madison Pure Bedroom storage solutions,Madison Pure,Bedding and Linens,3040,similar_features,113.83,3.81
+PRD0020,RPL0194,Madison Pure Bedroom storage solutions,Madison Pure,Bedding and Linens,2401,competitive_price,111.56,4.33
+PRD0021,RPL0201,Mr. USA Laundry detergent,Mr. USA,Cleaning Supplies,3717,competitive_price,21.69,3.18
+PRD0021,RPL0202,Mr. Essentials Laundry detergent,Mr. Essentials,Cleaning Supplies,4923,better_quality,23.04,4.07
+PRD0021,RPL0203,Mr. American Laundry detergent,Mr. American,Cleaning Supplies,654,tariff_free,22.32,3.75
+PRD0021,RPL0204,Mr. Organics Laundry detergent,Mr. Organics,Cleaning Supplies,1042,competitive_price,21.06,4.74
+PRD0022,RPL0211,Windex Select Dishwashing soap,Windex Select,Cleaning Supplies,221,competitive_price,48.6,2.61
+PRD0022,RPL0212,Windex Select Dishwashing soap,Windex Select,Cleaning Supplies,3181,tariff_free,43.39,3.46
+PRD0022,RPL0213,Windex Pure Dishwashing soap,Windex Pure,Cleaning Supplies,489,better_quality,50.02,3.88
+PRD0022,RPL0214,Windex Select Dishwashing soap,Windex Select,Cleaning Supplies,3609,similar_features,45.46,4.79
+PRD0023,RPL0221,Scrubbing Essentials Paper towels,Scrubbing Essentials,Cleaning Supplies,4882,competitive_price,51.32,3.43
+PRD0023,RPL0222,Scrubbing Pure Paper towels,Scrubbing Pure,Cleaning Supplies,4425,better_quality,46.61,4.95
+PRD0023,RPL0223,Scrubbing Heritage Paper towels,Scrubbing Heritage,Cleaning Supplies,2512,similar_features,51.71,4.43
+PRD0023,RPL0224,Scrubbing Organics Paper towels,Scrubbing Organics,Cleaning Supplies,3941,tariff_free,45.54,2.52
+PRD0024,RPL0231,Lysol Essentials Disinfecting wipes,Lysol Essentials,Cleaning Supplies,2689,tariff_free,32.4,4.35
+PRD0024,RPL0232,Lysol American Disinfecting wipes,Lysol American,Cleaning Supplies,4241,tariff_free,31.39,4.99
+PRD0024,RPL0233,Lysol Craft Disinfecting wipes,Lysol Craft,Cleaning Supplies,2208,better_quality,33.41,2.88
+PRD0024,RPL0234,Lysol USA Disinfecting wipes,Lysol USA,Cleaning Supplies,3037,competitive_price,30.7,4.09
+PRD0025,RPL0241,Clorox Organics Laundry detergent,Clorox Organics,Cleaning Supplies,5584,similar_features,17.37,3.44
+PRD0025,RPL0242,Clorox Heritage Laundry detergent,Clorox Heritage,Cleaning Supplies,2151,competitive_price,17.99,3.55
+PRD0025,RPL0243,Clorox Pure Laundry detergent,Clorox Pure,Cleaning Supplies,962,tariff_free,19.52,2.61
+PRD0025,RPL0244,Clorox Craft Laundry detergent,Clorox Craft,Cleaning Supplies,3251,competitive_price,18.62,3.65
+PRD0026,RPL0251,Pine-Sol Heritage Disinfecting wipes,Pine-Sol Heritage,Cleaning Supplies,5420,competitive_price,26.89,4.55
+PRD0026,RPL0252,Pine-Sol USA Disinfecting wipes,Pine-Sol USA,Cleaning Supplies,1270,similar_features,26.59,3.09
+PRD0026,RPL0253,Pine-Sol Organics Disinfecting wipes,Pine-Sol Organics,Cleaning Supplies,3419,similar_features,28.7,4.25
+PRD0026,RPL0254,Pine-Sol Organics Disinfecting wipes,Pine-Sol Organics,Cleaning Supplies,2113,tariff_free,26.67,2.69
+PRD0027,RPL0261,Scrubbing Pure Disinfecting wipes,Scrubbing Pure,Cleaning Supplies,4989,competitive_price,37.91,2.77
+PRD0027,RPL0262,Scrubbing Pure Disinfecting wipes,Scrubbing Pure,Cleaning Supplies,2772,similar_features,35.99,3.52
+PRD0027,RPL0263,Scrubbing Select Disinfecting wipes,Scrubbing Select,Cleaning Supplies,3995,competitive_price,36,3.16
+PRD0027,RPL0264,Scrubbing Heritage Disinfecting wipes,Scrubbing Heritage,Cleaning Supplies,5820,competitive_price,34.29,3.26
+PRD0028,RPL0271,Tide Select Dishwashing soap,Tide Select,Cleaning Supplies,2885,tariff_free,48.66,2.87
+PRD0028,RPL0272,Tide Organics Dishwashing soap,Tide Organics,Cleaning Supplies,601,similar_features,45.42,4.19
+PRD0028,RPL0273,Tide Pure Dishwashing soap,Tide Pure,Cleaning Supplies,3512,tariff_free,42.72,4.64
+PRD0028,RPL0274,Tide Heritage Dishwashing soap,Tide Heritage,Cleaning Supplies,1345,competitive_price,45.9,2.8
+PRD0029,RPL0281,Clorox Select Dishwashing soap,Clorox Select,Cleaning Supplies,3481,competitive_price,16.19,3.43
+PRD0029,RPL0282,Clorox Essentials Dishwashing soap,Clorox Essentials,Cleaning Supplies,814,competitive_price,18.36,2.55
+PRD0029,RPL0283,Clorox Select Dishwashing soap,Clorox Select,Cleaning Supplies,3832,competitive_price,18.32,4.52
+PRD0029,RPL0284,Clorox Organics Dishwashing soap,Clorox Organics,Cleaning Supplies,3976,better_quality,16.17,2.63
+PRD0030,RPL0291,Tide Nature Paper towels,Tide Nature,Cleaning Supplies,3335,tariff_free,9.04,4.21
+PRD0030,RPL0292,Tide Organics Paper towels,Tide Organics,Cleaning Supplies,1733,better_quality,8.63,3.19
+PRD0030,RPL0293,Tide Pure Paper towels,Tide Pure,Cleaning Supplies,5272,similar_features,8.37,4.04
+PRD0030,RPL0294,Tide American Paper towels,Tide American,Cleaning Supplies,4711,competitive_price,8.91,3.7
+PRD0031,RPL0301,Athletic Essentials Foam rollers,Athletic Essentials,Fitness Accessories,3634,tariff_free,46.54,3
+PRD0031,RPL0302,Athletic Craft Foam rollers,Athletic Craft,Fitness Accessories,3333,similar_features,49.67,4.45
+PRD0031,RPL0303,Athletic American Foam rollers,Athletic American,Fitness Accessories,4170,similar_features,47.77,3.36
+PRD0031,RPL0304,Athletic Nature Foam rollers,Athletic Nature,Fitness Accessories,413,tariff_free,45.69,3.3
+PRD0032,RPL0311,CAP USA Resistance bands,CAP USA,Fitness Accessories,2501,better_quality,51.2,2.65
+PRD0032,RPL0312,CAP Craft Resistance bands,CAP Craft,Fitness Accessories,4984,tariff_free,47.06,5
+PRD0032,RPL0313,CAP Heritage Resistance bands,CAP Heritage,Fitness Accessories,2175,competitive_price,46.21,3.17
+PRD0032,RPL0314,CAP Select Resistance bands,CAP Select,Fitness Accessories,3381,tariff_free,48.74,3.39
+PRD0033,RPL0321,TRX Pure Dumbbells,TRX Pure,Fitness Accessories,2805,similar_features,23.31,4.52
+PRD0033,RPL0322,TRX USA Dumbbells,TRX USA,Fitness Accessories,3080,tariff_free,25.13,4.87
+PRD0033,RPL0323,TRX Select Dumbbells,TRX Select,Fitness Accessories,4232,tariff_free,25.65,3.86
+PRD0033,RPL0324,TRX American Dumbbells,TRX American,Fitness Accessories,660,tariff_free,22.54,3.08
+PRD0034,RPL0331,CAP USA Resistance bands,CAP USA,Fitness Accessories,205,tariff_free,34.87,3.33
+PRD0034,RPL0332,CAP Pure Resistance bands,CAP Pure,Fitness Accessories,1653,similar_features,33.84,4.8
+PRD0034,RPL0333,CAP USA Resistance bands,CAP USA,Fitness Accessories,5005,tariff_free,32.06,4.26
+PRD0034,RPL0334,CAP Heritage Resistance bands,CAP Heritage,Fitness Accessories,3189,similar_features,36.65,4.9
+PRD0035,RPL0341,Everlast Nature Foam rollers,Everlast Nature,Fitness Accessories,2957,tariff_free,93.05,3.25
+PRD0035,RPL0342,Everlast Pure Foam rollers,Everlast Pure,Fitness Accessories,3778,better_quality,95.2,4.48
+PRD0035,RPL0343,Everlast Organics Foam rollers,Everlast Organics,Fitness Accessories,4803,similar_features,87.01,4.23
+PRD0035,RPL0344,Everlast Select Foam rollers,Everlast Select,Fitness Accessories,1636,similar_features,94.22,3.45
+PRD0036,RPL0351,Manduka Pure Exercise balls,Manduka Pure,Fitness Accessories,214,better_quality,16.49,4.87
+PRD0036,RPL0352,Manduka USA Exercise balls,Manduka USA,Fitness Accessories,2806,tariff_free,16.5,4.8
+PRD0036,RPL0353,Manduka Heritage Exercise balls,Manduka Heritage,Fitness Accessories,1352,competitive_price,18.6,3.33
+PRD0036,RPL0354,Manduka Select Exercise balls,Manduka Select,Fitness Accessories,2817,competitive_price,16.96,2.92
+PRD0037,RPL0361,TRX Organics Exercise balls,TRX Organics,Fitness Accessories,2372,competitive_price,15.9,3.02
+PRD0037,RPL0362,TRX Organics Exercise balls,TRX Organics,Fitness Accessories,1085,competitive_price,15.41,4.3
+PRD0037,RPL0363,TRX Nature Exercise balls,TRX Nature,Fitness Accessories,3637,better_quality,15.88,4.92
+PRD0037,RPL0364,TRX American Exercise balls,TRX American,Fitness Accessories,3077,competitive_price,17.02,3.87
+PRD0038,RPL0371,Athletic American Foam rollers,Athletic American,Fitness Accessories,4935,tariff_free,29.71,4.13
+PRD0038,RPL0372,Athletic Pure Foam rollers,Athletic Pure,Fitness Accessories,473,similar_features,28.18,3.24
+PRD0038,RPL0373,Athletic Essentials Foam rollers,Athletic Essentials,Fitness Accessories,807,better_quality,30.45,3.35
+PRD0038,RPL0374,Athletic Pure Foam rollers,Athletic Pure,Fitness Accessories,4681,competitive_price,29.45,4.85
+PRD0039,RPL0381,TRX Organics Exercise balls,TRX Organics,Fitness Accessories,5226,competitive_price,41.09,4.73
+PRD0039,RPL0382,TRX Nature Exercise balls,TRX Nature,Fitness Accessories,1551,better_quality,43.35,4.02
+PRD0039,RPL0383,TRX Pure Exercise balls,TRX Pure,Fitness Accessories,2912,tariff_free,37.59,3.01
+PRD0039,RPL0384,TRX Nature Exercise balls,TRX Nature,Fitness Accessories,4624,similar_features,41.76,3.16
+PRD0040,RPL0391,Gaiam Essentials Foam rollers,Gaiam Essentials,Fitness Accessories,606,better_quality,10.12,3.48
+PRD0040,RPL0392,Gaiam Pure Foam rollers,Gaiam Pure,Fitness Accessories,231,similar_features,9.81,3.57
+PRD0040,RPL0393,Gaiam American Foam rollers,Gaiam American,Fitness Accessories,410,similar_features,10.05,3.02
+PRD0040,RPL0394,Gaiam Heritage Foam rollers,Gaiam Heritage,Fitness Accessories,1146,better_quality,10.51,3.27
+PRD0041,RPL0401,Tylenol American Medicine,Tylenol American,Health Care,5615,better_quality,68.78,3.16
+PRD0041,RPL0402,Tylenol Pure Medicine,Tylenol Pure,Health Care,3324,better_quality,67.47,3.42
+PRD0041,RPL0403,Tylenol USA Medicine,Tylenol USA,Health Care,4009,similar_features,66.29,3.16
+PRD0041,RPL0404,Tylenol USA Medicine,Tylenol USA,Health Care,5905,competitive_price,65.05,4.17
+PRD0042,RPL0411,Benadryl Organics Supplements,Benadryl Organics,Health Care,3591,tariff_free,40.21,4.93
+PRD0042,RPL0412,Benadryl Craft Supplements,Benadryl Craft,Health Care,3371,better_quality,35.62,4.55
+PRD0042,RPL0413,Benadryl Craft Supplements,Benadryl Craft,Health Care,4089,tariff_free,39.46,3.93
+PRD0042,RPL0414,Benadryl American Supplements,Benadryl American,Health Care,3434,competitive_price,37.08,4.76
+PRD0043,RPL0421,Tums Craft Foot spas,Tums Craft,Health Care,4433,tariff_free,84.2,4.5
+PRD0043,RPL0422,Tums Heritage Foot spas,Tums Heritage,Health Care,3878,tariff_free,89.24,2.93
+PRD0043,RPL0423,Tums Select Foot spas,Tums Select,Health Care,1233,competitive_price,87.36,2.61
+PRD0043,RPL0424,Tums Nature Foot spas,Tums Nature,Health Care,5338,similar_features,79.28,2.87
+PRD0044,RPL0431,Centrum Organics Masks,Centrum Organics,Health Care,748,better_quality,50.02,2.72
+PRD0044,RPL0432,Centrum Craft Masks,Centrum Craft,Health Care,2462,competitive_price,45.63,3.8
+PRD0044,RPL0433,Centrum Craft Masks,Centrum Craft,Health Care,1121,tariff_free,49.05,3.54
+PRD0044,RPL0434,Centrum Heritage Masks,Centrum Heritage,Health Care,4809,similar_features,50.13,4.45
+PRD0045,RPL0441,Benadryl Craft Masks,Benadryl Craft,Health Care,3566,better_quality,76.26,3.16
+PRD0045,RPL0442,Benadryl American Masks,Benadryl American,Health Care,2456,better_quality,66.57,3.51
+PRD0045,RPL0443,Benadryl USA Masks,Benadryl USA,Health Care,2915,competitive_price,70.69,4.23
+PRD0045,RPL0444,Benadryl American Masks,Benadryl American,Health Care,3251,similar_features,76.73,2.55
+PRD0046,RPL0451,Benadryl Essentials Handheld massagers,Benadryl Essentials,Health Care,4227,competitive_price,52.74,4.65
+PRD0046,RPL0452,Benadryl Select Handheld massagers,Benadryl Select,Health Care,3829,similar_features,51.47,4.44
+PRD0046,RPL0453,Benadryl Essentials Handheld massagers,Benadryl Essentials,Health Care,5155,tariff_free,56.66,4.11
+PRD0046,RPL0454,Benadryl American Handheld massagers,Benadryl American,Health Care,3535,similar_features,52.14,4.35
+PRD0047,RPL0461,Robitussin USA Medicine,Robitussin USA,Health Care,1502,better_quality,38.16,2.66
+PRD0047,RPL0462,Robitussin Pure Medicine,Robitussin Pure,Health Care,4494,competitive_price,39.77,4.7
+PRD0047,RPL0463,Robitussin Pure Medicine,Robitussin Pure,Health Care,1844,tariff_free,36.19,4.59
+PRD0047,RPL0464,Robitussin USA Medicine,Robitussin USA,Health Care,3152,similar_features,37.8,4.26
+PRD0048,RPL0471,Pepto-Bismol Organics Handheld massagers,Pepto-Bismol Organics,Health Care,4337,competitive_price,30.25,3.49
+PRD0048,RPL0472,Pepto-Bismol USA Handheld massagers,Pepto-Bismol USA,Health Care,4204,tariff_free,27.58,3.99
+PRD0048,RPL0473,Pepto-Bismol American Handheld massagers,Pepto-Bismol American,Health Care,3065,similar_features,29.17,3.36
+PRD0048,RPL0474,Pepto-Bismol Heritage Handheld massagers,Pepto-Bismol Heritage,Health Care,3366,tariff_free,27.78,2.62
+PRD0049,RPL0481,Equate Select Masks,Equate Select,Health Care,5751,better_quality,76.49,3.02
+PRD0049,RPL0482,Equate Craft Masks,Equate Craft,Health Care,5788,tariff_free,68.99,2.52
+PRD0049,RPL0483,Equate Pure Masks,Equate Pure,Health Care,269,similar_features,75.94,3.06
+PRD0049,RPL0484,Equate Essentials Masks,Equate Essentials,Health Care,3284,better_quality,73.82,4.63
+PRD0050,RPL0491,Tylenol Essentials Foot spas,Tylenol Essentials,Health Care,2675,better_quality,74.29,4.19
+PRD0050,RPL0492,Tylenol Heritage Foot spas,Tylenol Heritage,Health Care,5626,similar_features,71.67,4.92
+PRD0050,RPL0493,Tylenol Craft Foot spas,Tylenol Craft,Health Care,5189,competitive_price,79.63,3.21
+PRD0050,RPL0494,Tylenol American Foot spas,Tylenol American,Health Care,2464,similar_features,72.37,4.1
+PRD0051,RPL0501,Instant Essentials Canisters,Instant Essentials,Kitchenware,5536,tariff_free,351.67,3.25
+PRD0051,RPL0502,Instant Craft Canisters,Instant Craft,Kitchenware,665,better_quality,357.67,4.51
+PRD0051,RPL0503,Instant Organics Canisters,Instant Organics,Kitchenware,408,similar_features,353.02,4.14
+PRD0051,RPL0504,Instant Essentials Canisters,Instant Essentials,Kitchenware,3514,competitive_price,365.44,3.47
+PRD0052,RPL0511,Pioneer Select Knife sets,Pioneer Select,Kitchenware,2021,better_quality,366.62,4.22
+PRD0052,RPL0512,Pioneer Organics Knife sets,Pioneer Organics,Kitchenware,1592,tariff_free,376.49,4.6
+PRD0052,RPL0513,Pioneer Essentials Knife sets,Pioneer Essentials,Kitchenware,1248,tariff_free,351.84,4.35
+PRD0052,RPL0514,Pioneer Organics Knife sets,Pioneer Organics,Kitchenware,2020,similar_features,385.34,3.39
+PRD0053,RPL0521,Rubbermaid Nature Mixing bowls,Rubbermaid Nature,Kitchenware,2914,similar_features,87.2,3.43
+PRD0053,RPL0522,Rubbermaid American Mixing bowls,Rubbermaid American,Kitchenware,4054,competitive_price,88.05,2.63
+PRD0053,RPL0523,Rubbermaid American Mixing bowls,Rubbermaid American,Kitchenware,4299,better_quality,88.56,2.8
+PRD0053,RPL0524,Rubbermaid Craft Mixing bowls,Rubbermaid Craft,Kitchenware,642,tariff_free,80.67,4.68
+PRD0054,RPL0531,Ninja Pure Food storage containers,Ninja Pure,Kitchenware,3007,better_quality,214.97,3.52
+PRD0054,RPL0532,Ninja Pure Food storage containers,Ninja Pure,Kitchenware,1677,better_quality,193.42,4.45
+PRD0054,RPL0533,Ninja Organics Food storage containers,Ninja Organics,Kitchenware,1648,competitive_price,203.45,3.28
+PRD0054,RPL0534,Ninja USA Food storage containers,Ninja USA,Kitchenware,1915,tariff_free,197.74,4.4
+PRD0055,RPL0541,Cuisinart Pure Food storage containers,Cuisinart Pure,Kitchenware,921,better_quality,148.94,2.82
+PRD0055,RPL0542,Cuisinart Nature Food storage containers,Cuisinart Nature,Kitchenware,4110,competitive_price,146.88,3.46
+PRD0055,RPL0543,Cuisinart Craft Food storage containers,Cuisinart Craft,Kitchenware,3256,similar_features,142.01,4.88
+PRD0055,RPL0544,Cuisinart Craft Food storage containers,Cuisinart Craft,Kitchenware,5743,tariff_free,141.8,2.51
+PRD0056,RPL0551,Pioneer Select Cookware sets,Pioneer Select,Kitchenware,3020,competitive_price,52.28,3.28
+PRD0056,RPL0552,Pioneer Nature Cookware sets,Pioneer Nature,Kitchenware,2707,competitive_price,50.74,2.92
+PRD0056,RPL0553,Pioneer Essentials Cookware sets,Pioneer Essentials,Kitchenware,3934,similar_features,54.35,4.32
+PRD0056,RPL0554,Pioneer Nature Cookware sets,Pioneer Nature,Kitchenware,1296,better_quality,53.86,3.36
+PRD0057,RPL0561,Instant Organics Kitchen gadgets and utensils,Instant Organics,Kitchenware,1550,better_quality,111.32,4.87
+PRD0057,RPL0562,Instant USA Kitchen gadgets and utensils,Instant USA,Kitchenware,1274,competitive_price,102.38,3.03
+PRD0057,RPL0563,Instant Craft Kitchen gadgets and utensils,Instant Craft,Kitchenware,3203,competitive_price,101.36,4.28
+PRD0057,RPL0564,Instant Nature Kitchen gadgets and utensils,Instant Nature,Kitchenware,2295,competitive_price,113.48,4.43
+PRD0058,RPL0571,KitchenAid USA Mixing bowls,KitchenAid USA,Kitchenware,5554,competitive_price,296.31,4.59
+PRD0058,RPL0572,KitchenAid Heritage Mixing bowls,KitchenAid Heritage,Kitchenware,3315,similar_features,284.98,2.81
+PRD0058,RPL0573,KitchenAid American Mixing bowls,KitchenAid American,Kitchenware,1883,competitive_price,298.15,4.24
+PRD0058,RPL0574,KitchenAid Essentials Mixing bowls,KitchenAid Essentials,Kitchenware,1027,similar_features,285.17,4.16
+PRD0059,RPL0581,Ninja Pure Canisters,Ninja Pure,Kitchenware,1059,competitive_price,245.34,3.78
+PRD0059,RPL0582,Ninja Essentials Canisters,Ninja Essentials,Kitchenware,1070,tariff_free,233.22,3.74
+PRD0059,RPL0583,Ninja Essentials Canisters,Ninja Essentials,Kitchenware,1852,better_quality,261.75,3.39
+PRD0059,RPL0584,Ninja Essentials Canisters,Ninja Essentials,Kitchenware,4690,tariff_free,235.06,3.74
+PRD0060,RPL0591,KitchenAid American Cookware sets,KitchenAid American,Kitchenware,222,competitive_price,352.65,2.53
+PRD0060,RPL0592,KitchenAid Heritage Cookware sets,KitchenAid Heritage,Kitchenware,5680,competitive_price,381.92,3.74
+PRD0060,RPL0593,KitchenAid Craft Cookware sets,KitchenAid Craft,Kitchenware,1029,tariff_free,337.83,4.76
+PRD0060,RPL0594,KitchenAid American Cookware sets,KitchenAid American,Kitchenware,2625,competitive_price,390.81,3.16
+PRD0061,RPL0601,Cheer Heritage Fabric softener,Cheer Heritage,Laundry Supplies,523,similar_features,36.25,4.63
+PRD0061,RPL0602,Cheer Organics Fabric softener,Cheer Organics,Laundry Supplies,1149,competitive_price,34.11,2.74
+PRD0061,RPL0603,Cheer USA Fabric softener,Cheer USA,Laundry Supplies,5634,similar_features,36.46,4.12
+PRD0061,RPL0604,Cheer Organics Fabric softener,Cheer Organics,Laundry Supplies,5293,competitive_price,36.7,3.17
+PRD0062,RPL0611,Snuggle Organics Fabric softener,Snuggle Organics,Laundry Supplies,1698,better_quality,24.76,2.78
+PRD0062,RPL0612,Snuggle American Fabric softener,Snuggle American,Laundry Supplies,3359,better_quality,22.71,4.22
+PRD0062,RPL0613,Snuggle Nature Fabric softener,Snuggle Nature,Laundry Supplies,1566,competitive_price,24.13,2.78
+PRD0062,RPL0614,Snuggle Pure Fabric softener,Snuggle Pure,Laundry Supplies,5039,better_quality,22.07,3.71
+PRD0063,RPL0621,Gain Pure Fabric softener,Gain Pure,Laundry Supplies,3137,tariff_free,33,4.03
+PRD0063,RPL0622,Gain American Fabric softener,Gain American,Laundry Supplies,1125,better_quality,34.6,4.72
+PRD0063,RPL0623,Gain USA Fabric softener,Gain USA,Laundry Supplies,5565,tariff_free,30.15,3.29
+PRD0063,RPL0624,Gain Organics Fabric softener,Gain Organics,Laundry Supplies,5838,competitive_price,32.52,4.25
+PRD0064,RPL0631,All Nature Fabric softener,All Nature,Laundry Supplies,2236,better_quality,30.47,3.7
+PRD0064,RPL0632,All Pure Fabric softener,All Pure,Laundry Supplies,4773,competitive_price,31.31,4.73
+PRD0064,RPL0633,All USA Fabric softener,All USA,Laundry Supplies,1485,better_quality,30.38,3.76
+PRD0064,RPL0634,All American Fabric softener,All American,Laundry Supplies,813,similar_features,31.46,4.38
+PRD0065,RPL0641,Tide Select Stain removers,Tide Select,Laundry Supplies,2478,tariff_free,17.08,2.63
+PRD0065,RPL0642,Tide Craft Stain removers,Tide Craft,Laundry Supplies,3503,competitive_price,17.95,4.54
+PRD0065,RPL0643,Tide American Stain removers,Tide American,Laundry Supplies,4894,better_quality,17.39,3.62
+PRD0065,RPL0644,Tide American Stain removers,Tide American,Laundry Supplies,4274,competitive_price,17.03,4.36
+PRD0066,RPL0651,Tide Heritage Fabric softener,Tide Heritage,Laundry Supplies,493,competitive_price,31.01,3.89
+PRD0066,RPL0652,Tide Heritage Fabric softener,Tide Heritage,Laundry Supplies,5271,tariff_free,32.97,4.09
+PRD0066,RPL0653,Tide American Fabric softener,Tide American,Laundry Supplies,3176,tariff_free,33.76,4.56
+PRD0066,RPL0654,Tide American Fabric softener,Tide American,Laundry Supplies,5277,similar_features,30.65,4
+PRD0067,RPL0661,Persil American Stain removers,Persil American,Laundry Supplies,5597,similar_features,10.51,3.05
+PRD0067,RPL0662,Persil Organics Stain removers,Persil Organics,Laundry Supplies,2591,similar_features,11.79,3.87
+PRD0067,RPL0663,Persil Heritage Stain removers,Persil Heritage,Laundry Supplies,1544,better_quality,10.38,3.73
+PRD0067,RPL0664,Persil Heritage Stain removers,Persil Heritage,Laundry Supplies,1804,better_quality,10.76,2.97
+PRD0068,RPL0671,Tide Select Laundry detergent,Tide Select,Laundry Supplies,1761,competitive_price,22.27,4.29
+PRD0068,RPL0672,Tide Nature Laundry detergent,Tide Nature,Laundry Supplies,5387,competitive_price,20.8,4.59
+PRD0068,RPL0673,Tide American Laundry detergent,Tide American,Laundry Supplies,5027,tariff_free,22.27,4.89
+PRD0068,RPL0674,Tide American Laundry detergent,Tide American,Laundry Supplies,597,better_quality,20.65,3.88
+PRD0069,RPL0681,Snuggle American Laundry baskets and hampers,Snuggle American,Laundry Supplies,1651,tariff_free,19.77,4.23
+PRD0069,RPL0682,Snuggle Pure Laundry baskets and hampers,Snuggle Pure,Laundry Supplies,5586,similar_features,17.34,4
+PRD0069,RPL0683,Snuggle Craft Laundry baskets and hampers,Snuggle Craft,Laundry Supplies,3629,tariff_free,19.64,4.95
+PRD0069,RPL0684,Snuggle Essentials Laundry baskets and hampers,Snuggle Essentials,Laundry Supplies,3008,better_quality,18.21,4.93
+PRD0070,RPL0691,Downy Pure Dryer sheets,Downy Pure,Laundry Supplies,5135,similar_features,32.35,4.25
+PRD0070,RPL0692,Downy Craft Dryer sheets,Downy Craft,Laundry Supplies,4734,tariff_free,36.32,4.08
+PRD0070,RPL0693,Downy Select Dryer sheets,Downy Select,Laundry Supplies,2580,tariff_free,35.02,4.22
+PRD0070,RPL0694,Downy Pure Dryer sheets,Downy Pure,Laundry Supplies,5887,competitive_price,34.36,4.09
+PRD0071,RPL0701,Dove Organics Soap,Dove Organics,Personal Care,4974,better_quality,35.77,3.93
+PRD0071,RPL0702,Dove Craft Soap,Dove Craft,Personal Care,3660,competitive_price,34.2,4.52
+PRD0071,RPL0703,Dove USA Soap,Dove USA,Personal Care,634,tariff_free,34.74,4.18
+PRD0071,RPL0704,Dove Essentials Soap,Dove Essentials,Personal Care,1518,similar_features,36.83,4.96
+PRD0072,RPL0711,L'Oreal Pure Hair treatments,L'Oreal Pure,Personal Care,5857,tariff_free,24.76,4.46
+PRD0072,RPL0712,L'Oreal Craft Hair treatments,L'Oreal Craft,Personal Care,3907,tariff_free,21.73,2.76
+PRD0072,RPL0713,L'Oreal Craft Hair treatments,L'Oreal Craft,Personal Care,4385,similar_features,23.07,4.46
+PRD0072,RPL0714,L'Oreal USA Hair treatments,L'Oreal USA,Personal Care,3374,similar_features,25.09,3.54
+PRD0073,RPL0721,Gillette Craft Razors,Gillette Craft,Personal Care,2258,better_quality,25.13,3.01
+PRD0073,RPL0722,Gillette Select Razors,Gillette Select,Personal Care,5972,similar_features,28.84,4.27
+PRD0073,RPL0723,Gillette Craft Razors,Gillette Craft,Personal Care,1809,tariff_free,28.09,4.44
+PRD0073,RPL0724,Gillette Essentials Razors,Gillette Essentials,Personal Care,5792,tariff_free,26.84,2.69
+PRD0074,RPL0731,Oral-B Craft Shaving products,Oral-B Craft,Personal Care,532,similar_features,33.97,3.57
+PRD0074,RPL0732,Oral-B Pure Shaving products,Oral-B Pure,Personal Care,2289,better_quality,34.21,2.51
+PRD0074,RPL0733,Oral-B Pure Shaving products,Oral-B Pure,Personal Care,2842,similar_features,33.51,3.99
+PRD0074,RPL0734,Oral-B American Shaving products,Oral-B American,Personal Care,4706,similar_features,37.85,3.4
+PRD0075,RPL0741,Oral-B Craft Razors,Oral-B Craft,Personal Care,1706,tariff_free,29.72,3.8
+PRD0075,RPL0742,Oral-B Nature Razors,Oral-B Nature,Personal Care,3504,tariff_free,31.33,2.73
+PRD0075,RPL0743,Oral-B Select Razors,Oral-B Select,Personal Care,2912,tariff_free,31.93,3.4
+PRD0075,RPL0744,Oral-B Craft Razors,Oral-B Craft,Personal Care,4798,competitive_price,30.99,4.56
+PRD0076,RPL0751,Pantene Heritage Feminine hygiene products,Pantene Heritage,Personal Care,3850,tariff_free,22.39,3.1
+PRD0076,RPL0752,Pantene USA Feminine hygiene products,Pantene USA,Personal Care,2829,competitive_price,22.43,3.45
+PRD0076,RPL0753,Pantene Nature Feminine hygiene products,Pantene Nature,Personal Care,2516,similar_features,20.95,2.56
+PRD0076,RPL0754,Pantene Craft Feminine hygiene products,Pantene Craft,Personal Care,3850,similar_features,22.85,3.72
+PRD0077,RPL0761,Crest Select Feminine hygiene products,Crest Select,Personal Care,874,tariff_free,27.25,4.87
+PRD0077,RPL0762,Crest Craft Feminine hygiene products,Crest Craft,Personal Care,5335,tariff_free,28.21,2.66
+PRD0077,RPL0763,Crest Nature Feminine hygiene products,Crest Nature,Personal Care,1884,better_quality,29.56,3.84
+PRD0077,RPL0764,Crest Heritage Feminine hygiene products,Crest Heritage,Personal Care,1459,similar_features,29.17,2.56
+PRD0078,RPL0771,Gillette USA Hair treatments,Gillette USA,Personal Care,644,similar_features,2.74,2.94
+PRD0078,RPL0772,Gillette Craft Hair treatments,Gillette Craft,Personal Care,2064,better_quality,2.73,4.78
+PRD0078,RPL0773,Gillette Nature Hair treatments,Gillette Nature,Personal Care,3513,competitive_price,2.91,3.58
+PRD0078,RPL0774,Gillette Nature Hair treatments,Gillette Nature,Personal Care,4581,competitive_price,3.01,2.51
+PRD0079,RPL0781,Dove USA Shaving products,Dove USA,Personal Care,794,competitive_price,13.15,3.39
+PRD0079,RPL0782,Dove Essentials Shaving products,Dove Essentials,Personal Care,2668,similar_features,13.32,4.02
+PRD0079,RPL0783,Dove American Shaving products,Dove American,Personal Care,5612,tariff_free,12.5,2.58
+PRD0079,RPL0784,Dove Craft Shaving products,Dove Craft,Personal Care,3403,similar_features,12.17,4.49
+PRD0080,RPL0791,Gillette Pure Toothpaste,Gillette Pure,Personal Care,5507,competitive_price,36.09,3.43
+PRD0080,RPL0792,Gillette Craft Toothpaste,Gillette Craft,Personal Care,1358,competitive_price,39.54,2.81
+PRD0080,RPL0793,Gillette Nature Toothpaste,Gillette Nature,Personal Care,897,similar_features,37.52,3.26
+PRD0080,RPL0794,Gillette Select Toothpaste,Gillette Select,Personal Care,5491,tariff_free,36.78,4.63
+PRD0081,RPL0801,Greenies Pure Pet beds,Greenies Pure,Pet Supplies,5253,tariff_free,18.21,4.59
+PRD0081,RPL0802,Greenies Heritage Pet beds,Greenies Heritage,Pet Supplies,4847,better_quality,18.2,4.63
+PRD0081,RPL0803,Greenies Craft Pet beds,Greenies Craft,Pet Supplies,5702,competitive_price,17.87,2.67
+PRD0081,RPL0804,Greenies Select Pet beds,Greenies Select,Pet Supplies,4191,similar_features,19.87,4.88
+PRD0082,RPL0811,Friskies Pure Pet toys,Friskies Pure,Pet Supplies,2121,competitive_price,34.05,2.75
+PRD0082,RPL0812,Friskies Select Pet toys,Friskies Select,Pet Supplies,3891,similar_features,32.17,3.32
+PRD0082,RPL0813,Friskies Pure Pet toys,Friskies Pure,Pet Supplies,3185,better_quality,33.49,4.52
+PRD0082,RPL0814,Friskies Pure Pet toys,Friskies Pure,Pet Supplies,2216,better_quality,30.51,4.46
+PRD0083,RPL0821,Fancy Essentials Pet accessories,Fancy Essentials,Pet Supplies,1300,similar_features,31.21,4.2
+PRD0083,RPL0822,Fancy American Pet accessories,Fancy American,Pet Supplies,3138,better_quality,29.42,4.44
+PRD0083,RPL0823,Fancy Craft Pet accessories,Fancy Craft,Pet Supplies,5488,similar_features,27.75,4.02
+PRD0083,RPL0824,Fancy Pure Pet accessories,Fancy Pure,Pet Supplies,1809,competitive_price,31.45,3.16
+PRD0084,RPL0831,Iams Heritage Cat food and treats,Iams Heritage,Pet Supplies,4354,better_quality,45.06,4.08
+PRD0084,RPL0832,Iams Select Cat food and treats,Iams Select,Pet Supplies,4718,better_quality,45.15,3.15
+PRD0084,RPL0833,Iams Pure Cat food and treats,Iams Pure,Pet Supplies,2029,similar_features,41.49,4.73
+PRD0084,RPL0834,Iams Pure Cat food and treats,Iams Pure,Pet Supplies,4381,similar_features,42.16,2.73
+PRD0085,RPL0841,Royal Craft Litter boxes,Royal Craft,Pet Supplies,2156,tariff_free,22.63,4.62
+PRD0085,RPL0842,Royal Craft Litter boxes,Royal Craft,Pet Supplies,1504,tariff_free,23.14,2.95
+PRD0085,RPL0843,Royal American Litter boxes,Royal American,Pet Supplies,531,better_quality,26.27,3.05
+PRD0085,RPL0844,Royal Select Litter boxes,Royal Select,Pet Supplies,3226,tariff_free,22.83,3.09
+PRD0086,RPL0851,Purina Craft Cat food and treats,Purina Craft,Pet Supplies,3159,better_quality,24.01,3.47
+PRD0086,RPL0852,Purina USA Cat food and treats,Purina USA,Pet Supplies,5512,similar_features,20.88,3.31
+PRD0086,RPL0853,Purina Essentials Cat food and treats,Purina Essentials,Pet Supplies,4870,better_quality,22.82,2.93
+PRD0086,RPL0854,Purina Organics Cat food and treats,Purina Organics,Pet Supplies,837,better_quality,22.86,3.79
+PRD0087,RPL0861,Hill's Select Litter boxes,Hill's Select,Pet Supplies,3090,similar_features,48.77,4.54
+PRD0087,RPL0862,Hill's American Litter boxes,Hill's American,Pet Supplies,5149,tariff_free,50.93,2.52
+PRD0087,RPL0863,Hill's American Litter boxes,Hill's American,Pet Supplies,831,similar_features,46.04,3.79
+PRD0087,RPL0864,Hill's Select Litter boxes,Hill's Select,Pet Supplies,1489,competitive_price,45.92,3.41
+PRD0088,RPL0871,Blue Select Pet accessories,Blue Select,Pet Supplies,2905,better_quality,34.75,4.3
+PRD0088,RPL0872,Blue American Pet accessories,Blue American,Pet Supplies,5039,better_quality,35.11,2.9
+PRD0088,RPL0873,Blue USA Pet accessories,Blue USA,Pet Supplies,1247,tariff_free,33.78,3.93
+PRD0088,RPL0874,Blue Pure Pet accessories,Blue Pure,Pet Supplies,521,tariff_free,35.96,4.73
+PRD0089,RPL0881,Iams USA Pet beds,Iams USA,Pet Supplies,1674,better_quality,28.83,3.79
+PRD0089,RPL0882,Iams USA Pet beds,Iams USA,Pet Supplies,5621,competitive_price,32.3,4.55
+PRD0089,RPL0883,Iams Select Pet beds,Iams Select,Pet Supplies,4061,tariff_free,30.21,4.67
+PRD0089,RPL0884,Iams Select Pet beds,Iams Select,Pet Supplies,5122,tariff_free,32.07,2.86
+PRD0090,RPL0891,Purina Craft Dog food and treats,Purina Craft,Pet Supplies,5816,better_quality,38.41,3.36
+PRD0090,RPL0892,Purina Heritage Dog food and treats,Purina Heritage,Pet Supplies,3357,competitive_price,38.19,2.83
+PRD0090,RPL0893,Purina Select Dog food and treats,Purina Select,Pet Supplies,4331,tariff_free,40.06,4.21
+PRD0090,RPL0894,Kilks Dog food and treats,Kilks,Pet Supplies,5236,competitive_price,37.86,4
+PRD0091,RPL0901,Time Heritage Bikinis,Time Heritage,Women's Clothing,1267,competitive_price,40.5,4.75
+PRD0091,RPL0902,Time Nature Bikinis,Time Nature,Women's Clothing,3234,better_quality,40.76,4.69
+PRD0091,RPL0903,Time Select Bikinis,Time Select,Women's Clothing,4149,better_quality,43.46,4.47
+PRD0091,RPL0904,Time Organics Bikinis,Time Organics,Women's Clothing,5907,better_quality,41.19,3.94
+PRD0092,RPL0911,George Pure Dresses,George Pure,Women's Clothing,2104,competitive_price,18.27,4.78
+PRD0092,RPL0912,George Essentials Dresses,George Essentials,Women's Clothing,4654,tariff_free,19.31,3.52
+PRD0092,RPL0913,George USA Dresses,George USA,Women's Clothing,258,competitive_price,19.65,3.94
+PRD0092,RPL0914,George Craft Dresses,George Craft,Women's Clothing,5562,similar_features,17.51,3.01
+PRD0093,RPL0921,Nature Bikinis,Nature,Women's Clothing,1467,similar_features,34.44,3.57
+PRD0093,RPL0922,Free Essentials Bikinis,Free Essentials,Women's Clothing,3669,similar_features,37.22,3.91
+PRD0093,RPL0923,Free Nature Bikinis,Free Nature,Women's Clothing,3585,better_quality,36.65,3.88
+PRD0093,RPL0924,Free Pure Bikinis,Free Pure,Women's Clothing,4745,similar_features,34.49,3.71
+PRD0094,RPL0931,Wonder Organics Sportswear,Wonder Organics,Women's Clothing,3461,competitive_price,21.99,4.34
+PRD0094,RPL0932,Wonder Select Sportswear,Wonder Select,Women's Clothing,5928,competitive_price,20.89,4.87
+PRD0094,RPL0933,Select Sportswear,Select,Women's Clothing,2972,competitive_price,21.1,4.5
+PRD0094,RPL0934,Wonder Pure Sportswear,Wonder Pure,Women's Clothing,5409,competitive_price,20.69,2.51
+PRD0095,RPL0941,Time Pure Sportswear,Time Pure,Women's Clothing,5117,competitive_price,53.94,3.59
+PRD0095,RPL0942,Time Essentials Sportswear,Time Essentials,Women's Clothing,855,better_quality,51.77,4.02
+PRD0095,RPL0943,Time Nature Sportswear,Time Nature,Women's Clothing,4468,competitive_price,55.17,3.22
+PRD0095,RPL0944,Time Pure Sportswear,Time Pure,Women's Clothing,3796,similar_features,55.4,2.53
+PRD0096,RPL0951,George Select Plus-sized attire,George Select,Women's Clothing,5111,tariff_free,23.82,3.78
+PRD0096,RPL0952,George Pure Plus-sized attire,George Pure,Women's Clothing,3146,competitive_price,26.45,3.1
+PRD0096,RPL0953,George Pure Plus-sized attire,George Pure,Women's Clothing,2460,similar_features,24.04,4.45
+PRD0096,RPL0954,George Nature Plus-sized attire,George Nature,Women's Clothing,1840,competitive_price,25.35,3.79
+PRD0097,RPL0961,Free Heritage Bikinis,Free Heritage,Women's Clothing,4780,similar_features,32.31,4.79
+PRD0097,RPL0962,Free Organics Bikinis,Free Organics,Women's Clothing,2465,tariff_free,34.43,3.07
+PRD0097,RPL0963,Free American Bikinis,Free American,Women's Clothing,4909,tariff_free,34.26,2.51
+PRD0097,RPL0964,Free Nature Bikinis,Free Nature,Women's Clothing,4776,similar_features,32.08,2.68
+PRD0098,RPL0971,Scoop Organics Plus-sized attire,Scoop Organics,Women's Clothing,4404,similar_features,24.45,4.89
+PRD0098,RPL0972,Scoop American Plus-sized attire,Scoop American,Women's Clothing,4813,tariff_free,24.52,3.71
+PRD0098,RPL0973,Scoop Organics Plus-sized attire,Scoop Organics,Women's Clothing,3958,competitive_price,24.5,4.2
+PRD0098,RPL0974,Scoop American Plus-sized attire,Scoop American,Women's Clothing,753,tariff_free,21.42,3.46
+PRD0099,RPL0981,Scoop Select Bikinis,Scoop Select,Women's Clothing,3578,competitive_price,37.07,4.89
+PRD0099,RPL0982,Scoop Essentials Bikinis,Scoop Essentials,Women's Clothing,961,similar_features,33.95,3.5
+PRD0099,RPL0983,Scoop Heritage Bikinis,Scoop Heritage,Women's Clothing,1662,similar_features,35.68,3.69
+PRD0099,RPL0984,Scoop Select Bikinis,Scoop Select,Women's Clothing,2404,tariff_free,37.61,2.96
+PRD0100,RPL0991,Scoop American Plus-sized attire,Scoop American,Women's Clothing,2123,similar_features,50.47,4.34
+PRD0100,RPL0992,Scoop Select Plus-sized attire,Scoop Select,Women's Clothing,2245,similar_features,46.52,4.59
+PRD0100,RPL0993,Scoop Pure Plus-sized attire,Scoop Pure,Women's Clothing,1182,better_quality,50.8,4.8
+PRD0100,RPL0994,Scoop USA Plus-sized attire,Scoop USA,Women's Clothing,4635,better_quality,50.68,4.89
