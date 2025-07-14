@@ -1,6 +1,6 @@
 import React from 'react';
 import { Product } from '../../types';
-import { MapPin, Star, TrendingUp, DollarSign, Percent, X, Sparkles } from 'lucide-react';
+import { MapPin, Star, TrendingUp, DollarSign, Percent, X, Sparkles, Loader2 } from 'lucide-react';
 
 interface ProductCardProps {
   product: Product;
@@ -15,6 +15,7 @@ interface ProductCardProps {
   showBilling?: boolean;
   onShowRecommendedMore?: () => void;
   onRemove?: () => void;
+  isLoadingRecommendation?: boolean;
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({
@@ -30,6 +31,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   showBilling = false,
   onShowRecommendedMore,
   onRemove
+  isLoadingRecommendation = false
 }) => {
   const handleClick = () => {
     if (onSelect && !isOriginal) {
@@ -173,14 +175,26 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                     {!isOriginal && onShowRecommendedMore && (
                       <button
                         onClick={handleShowRecommendedMore}
+                        disabled={isLoadingRecommendation}
                         className={`px-3 py-1 text-xs font-medium rounded transition-colors flex items-center space-x-1 ${
-                          isSelected
-                            ? 'bg-blue-600 text-white'
+                          isLoadingRecommendation
+                            ? 'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed'
+                            : isSelected
+                            ? 'bg-blue-600 text-white hover:bg-blue-700'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400'
                         }`}
                       >
-                        <Sparkles className="h-3 w-3" />
-                        <span>Show Recommended More</span>
+                        {isLoadingRecommendation ? (
+                          <>
+                            <Loader2 className="h-3 w-3 animate-spin" />
+                            <span>Loading...</span>
+                          </>
+                        ) : (
+                          <>
+                            <Sparkles className="h-3 w-3" />
+                            <span>Show Recommended More</span>
+                          </>
+                        )}
                       </button>
                     )}
                   </div>

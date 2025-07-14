@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Recommendation, Product } from '../../types';
 import { ProductCard } from '../Products/ProductCard';
-import { Check, X, Clock, AlertCircle } from 'lucide-react';
+import { Check, X, Clock, AlertCircle, Loader2 } from 'lucide-react';
 import { apiService } from '../../services/api';
 import { ExtendedReplacement } from '../../types';
 
@@ -24,6 +24,8 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
     recommendation.alternatives.map(alt => alt.id) // All alternatives selected by default
   );
   const [showComparison, setShowComparison] = useState(false);
+  const [loadingNewAlternatives, setLoadingNewAlternatives] = useState<Record<string, boolean>>({});
+  const [newRecommendations, setNewRecommendations] = useState<Record<string, any>>({});
   const [products, setProducts] = useState(() => {
     // Initialize with equal distribution
     const totalProducts = 1 + recommendation.alternatives.length; // 1 original + alternatives
@@ -101,41 +103,34 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
     });
   };
 
-  const handleShowRecommendedMore = async () => {
-    const originalId = recommendation.originalProduct.id;
-    const rejectedId = products.alternatives[0]?.id;
+  const handleShowRecommendedMore = async (rejectedId: string) => {
+    const originalId = recommendation.originalProduct.product_id; // Use product_id for API call
+    
+    // Set loading state for this specific alternative
+    setLoadingNewAlternatives(prev => ({ ...prev, [rejectedId]: true }));
 
     try {
-      const newAlt = await apiService.getNewAlternative(originalId, rejectedId);
-
-      const newProduct: ExtendedReplacement & { id: string } = {
-        id: newAlt.replacement_id, // for UI component keys and tracking
-        replacement_id: newAlt.replacement_id,
-        original_product_id: recommendation.originalProduct.product_id,
-        name: newAlt.name,
-        brand: newAlt.brand,
-        category: newAlt.category,
-        stock_level: 0, // Default/fallback — adjust if available
-        reason_code: newAlt.reason_code || 'auto', // fallback
-        price: newAlt.price,
-        brand_popularity: newAlt.brand_popularity,
-
-        // Extended fields
-        allocationPercentage: 0,
-        diversificationScore: 0,
-        costSavings: 0,
-        qualityRating: newAlt.brand_popularity,
-        tariffImpact: 0
-      };
-
-      setProducts(prev => ({
+      // Make API call to FastAPI backend
+      const response = await fetch(`http://127.0.0.1:8000/recommend?original_id=${originalId}&rejected_id=${rejectedId}`);
+      
+      if (!response.ok) {
+        throw new Error(`API request failed: ${response.status}`);
+      }
+      
+      const newRecommendation = await response.json();
+      
+      // Store the new recommendation for display
+      setNewRecommendations(prev => ({
         ...prev,
-        alternatives: [...prev.alternatives, newProduct]
+        [rejectedId]: newRecommendation
       }));
-
-      setSelectedAlternatives(prev => [...prev, newProduct.id]);
+      
     } catch (error) {
-      console.error("Failed to fetch new alternative:", error);
+      console.error("Failed to fetch new recommendation:", error);
+      // You could add error state handling here if needed
+    } finally {
+      // Clear loading state
+      setLoadingNewAlternatives(prev => ({ ...prev, [rejectedId]: false }));
     }
   };
 
@@ -272,7 +267,7 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {products.alternatives.map((product) => (
-              <div key={product.id} className="relative">
+              <div key={product.id} className="space-y-4">
                 <ProductCard
                   product={product}
                   isSelected={selectedAlternatives.includes(product.id)}
@@ -282,9 +277,59 @@ export const RecommendationCard: React.FC<RecommendationCardProps> = ({
                   isOriginal={false}
                   showAllocationInput={true}
                   showBilling={showComparison} // Show billing when comparison is enabled
-                  onShowRecommendedMore={handleShowRecommendedMore}
+                  onShowRecommendedMore={() => handleShowRecommendedMore(product.id)}
                   onRemove={() => handleRemoveAlternative(product.id)}
+                  isLoadingRecommendation={loadingNewAlternatives[product.id] || false}
                 />
+                
+                {/* Display new recommendation if available */}
+                {newRecommendations[product.id] && (
+                  <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                    <div className="flex items-center space-x-2 mb-3">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                      <h5 className="text-sm font-medium text-blue-800 dark:text-blue-200">
+                        New Recommendation
+                      </h5>
+                    </div>
+                    
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-gray-600 dark:text-gray-400">Name:</span>
+                        <span className="font-medium text-gray-900 dark:text-white">
+                          {newRecommendations[product.id].name}
+                        </span>
+                      </div>
+                      
+                      <div className="flex justify-between">
+                        <span className="text-gray-600 dark:text-gray-400">Brand:</span>
+                        <span className="font-medium text-gray-900 dark:text-white">
+                          {newRecommendations[product.id].brand}
+                        </span>
+                      </div>
+                      
+                      <div className="flex justify-between">
+                        <span className="text-gray-600 dark:text-gray-400">Category:</span>
+                        <span className="font-medium text-gray-900 dark:text-white">
+                          {newRecommendations[product.id].category}
+                        </span>
+                      </div>
+                      
+                      <div className="flex justify-between">
+                        <span className="text-gray-600 dark:text-gray-400">Price:</span>
+                        <span className="font-bold text-green-600 dark:text-green-400">
+                          ₹{newRecommendations[product.id].price.toFixed(2)}
+                        </span>
+                      </div>
+                      
+                      <div className="flex justify-between">
+                        <span className="text-gray-600 dark:text-gray-400">Reason:</span>
+                        <span className="px-2 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-200 rounded-full">
+                          {newRecommendations[product.id].reason_code}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
