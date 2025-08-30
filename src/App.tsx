@@ -8,6 +8,7 @@ import { RecommendationsList } from './components/Recommendations/Recommendation
 import { ApprovedRecommendations } from './components/Recommendations/ApprovedRecommendations';
 import { RejectedRecommendations } from './components/Recommendations/RejectedRecommendations';
 import { AnalyticsPage } from './components/Analytics/AnalyticsPage';
+import { ReportsPage } from './components/Reports/ReportsPage';
 
 function App() {
   const [showLanding, setShowLanding] = useState(true);
@@ -59,6 +60,12 @@ function App() {
       case 'analytics':
         return (
           <AnalyticsPage />
+        );
+      case 'reports':
+        return (
+          <div>
+            <ReportsPage />
+          </div>
         );
       default:
         return <DashboardOverview />;
